@@ -1,0 +1,237 @@
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI in Your Law Firm</title>
+<style>
+  /* Freedom Practice house style: navy + teal, sans throughout, generous whitespace. */
+  :root{
+    --paper:#FFFFFF; --alt:#F5F8F9; --navy:#12324F; --ink:#2B3A44; --muted:#657782;
+    --teal:#1795A6; --teal-hi:#12808E; --line:#DFE7EA;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{--paper:#0E1A24;--alt:#132430;--navy:#E8F1F5;--ink:#D3DEE5;--muted:#93A6B2;
+          --teal:#3FBED0;--teal-hi:#5FD2E2;--line:#24363F}
+  }
+  :root[data-theme="dark"]{--paper:#0E1A24;--alt:#132430;--navy:#E8F1F5;--ink:#D3DEE5;
+    --muted:#93A6B2;--teal:#3FBED0;--teal-hi:#5FD2E2;--line:#24363F}
+  :root[data-theme="light"]{--paper:#FFFFFF;--alt:#F5F8F9;--navy:#12324F;--ink:#2B3A44;
+    --muted:#657782;--teal:#1795A6;--teal-hi:#12808E;--line:#DFE7EA}
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font:17px/1.68 "Helvetica Neue",Montserrat,Inter,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:40rem;margin:0 auto;padding:0 1.5rem}
+
+  header{padding:3.4rem 0 0}
+  .mark{font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--teal);
+    font-weight:700}
+  h1{font-size:clamp(2rem,5.6vw,2.95rem);line-height:1.14;letter-spacing:-.016em;
+    color:var(--navy);font-weight:700;margin:1.6rem 0 1.1rem;text-wrap:balance}
+  .lede{font-size:1.14rem;line-height:1.55;color:var(--muted);margin:0;text-wrap:pretty}
+  .free{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;
+    color:var(--teal);margin:2rem 0 .9rem}
+
+  form{display:flex;gap:.6rem;flex-wrap:wrap;margin:0 0 .7rem}
+  input[type=email]{flex:1 1 15rem;min-width:0;padding:.95rem 1.05rem;font-size:1rem;
+    font-family:inherit;color:var(--ink);background:var(--paper);
+    border:1.5px solid var(--line);border-radius:4px}
+  input[type=email]::placeholder{color:var(--muted)}
+  input[type=email]:focus{outline:none;border-color:var(--teal);
+    box-shadow:0 0 0 3px rgba(23,149,166,.18)}
+  button{padding:.95rem 1.7rem;font-size:.92rem;font-weight:700;letter-spacing:.04em;
+    text-transform:uppercase;font-family:inherit;color:#fff;background:var(--teal);
+    border:0;border-radius:4px;cursor:pointer;transition:background .15s}
+  button:hover{background:var(--teal-hi)}
+  .fine{font-size:.78rem;color:var(--muted);margin:0 0 3.6rem;line-height:1.55}
+
+  hr{border:0;border-top:1px solid var(--line);margin:0}
+  section{padding:3.4rem 0}
+  h2{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);
+    font-weight:700;margin:0 0 1.3rem}
+  p{margin:0 0 1.15rem;text-wrap:pretty}
+  strong{font-weight:700;color:var(--navy)}
+  .pull{font-size:1.3rem;line-height:1.45;color:var(--navy);font-weight:600;
+    border-left:3px solid var(--teal);padding-left:1.25rem;margin:1.9rem 0}
+
+  ul{list-style:none;padding:0;margin:0}
+  li{position:relative;padding-left:1.7rem;margin:1.15rem 0}
+  li:before{content:"";position:absolute;left:0;top:.66em;width:.55rem;height:.55rem;
+    background:var(--teal);border-radius:50%}
+
+  .end{background:var(--alt);padding:3.4rem 0}
+  footer{padding:2.8rem 0 4rem;font-size:.85rem;color:var(--muted);line-height:1.7}
+  footer b{color:var(--navy)}
+  .disc{font-size:.77rem;margin-top:1rem}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="mark">AI in Your Law Firm</div>
+
+    <h1>You have heard enough about AI.<br>Here is what to do with it.</h1>
+
+    <p class="lede">Almost everything written about AI for lawyers is aimed at the wrong
+    person in your office.</p>
+
+    <p class="free">A free email, once a week</p>
+
+    <!-- LIAM: point action= at the list platform. Keep name="email". -->
+    <form action="#" method="post">
+      <input type="email" name="email" placeholder="you@yourfirm.com" required
+             autocomplete="email" aria-label="Your email address">
+      <button type="submit">Send me the newsletter</button>
+    </form>
+    <p class="fine">One email a week.  Unsubscribe in one click.  We will never sell or
+    share your address.  Nothing is for sale on this page.</p>
+  </header>
+</div>
+
+<hr>
+<div class="wrap"><section>
+  <h2>The wrong person</h2>
+  <p>Count what has been pitched to your firm this year.  The research tool.  The drafting
+  assistant.  The summarizer, the clause library, the chatbot for your website.  Add the
+  articles, the panels, the CLE sessions.</p>
+
+  <p><strong>Every one of them puts you at the keyboard.</strong>  Better prompts.  Faster
+  research.  Draft the memo in half the time.</p>
+
+  <p>So you try it.  It works.  But your week does not change.</p>
+
+  <p>You do not see more clients.  You do not see more of the <em>right</em> clients.  You do
+  not make any more money.  You get the same work done a little faster, and then you sit down
+  to the next thing.</p>
+
+  <p>Because getting the legal work done was never the whole business.  The rest of it is
+  intake, scheduling, funding, follow-up, billing, and the dozen small things that have to
+  happen around a document.</p>
+
+  <p class="pull">The question is not how you use AI.  It is how your firm uses AI.</p>
+
+  <p>Your firm is more than you and the documents you produce.  There is an intake seat, a
+  funding seat, a paralegal seat, a bookkeeping seat.  Whether you have somebody in each of
+  those or you are sitting in all of them yourself, that is where the week goes.</p>
+
+  <p>Making the attorney faster changes very little.  Changing what happens in
+  those other seats changes the whole business.</p>
+</section></div>
+
+<hr>
+<div class="wrap"><section>
+  <h2>The work that is slowing you down</h2>
+  <p>The voicemail nobody returned.  The follow-up email that never went out.  The funding question that sat three days because one person
+  knew the answer.</p>
+
+  <p><strong>None of that is people slacking.</strong>  Everyone in your office is busy.  The
+  problem is that nobody knew which thing to do first, or had what they needed to do it well.</p>
+
+  <p>Calling a prospect back is easy.  It is three minutes.</p>
+
+  <p>What is not easy is knowing which of the forty names to call today, reading the intake
+  form, finding the notes from the last conversation, and working out what this particular
+  person needs to hear.  That is thirty minutes of file review before a three minute call can
+  happen at all.</p>
+
+  <p class="pull">The task takes three minutes.  Getting ready to do it takes thirty.  That
+  is where your week goes.</p>
+
+  <p>There are <strong>114 automations</strong> running in our office as we write this.  Not
+  one of them arrived as a package.  They accumulated one at a time, usually because somebody
+  got tired of doing the same thing twice.</p>
+
+  <p>The one that matters most runs every five minutes.  It checks which voicemails have not
+  been returned and tells the person who needs to know.  Nobody has to remember, nobody has
+  to ask, and nobody finds out on Friday that a prospect called on Tuesday.</p>
+
+</section></div>
+
+<hr>
+<div class="wrap"><section>
+  <h2>Who it is for</h2>
+  <p><strong>Solo attorneys</strong>, where you are the whole firm.  You sit in every seat,
+  and the thirty minutes of preparation comes out of the same day as the client meetings, the
+  drafting, and the billing.</p>
+
+  <p><strong>Small firms</strong>, where one attorney has an assistant or two.  There are
+  other hands now, but everything still routes through you, and you are the one who knows
+  what each file needs next.</p>
+
+  <p><strong>Firms with a few attorneys and a dozen or so staff.</strong>  That is us.  The
+  work is spread across real departments, and a new problem appears: nobody can see the whole
+  picture anymore, and things fall between people rather than getting dropped by one.</p>
+
+  <p class="pull">The problem does not go away as you grow.  It changes shape.</p>
+
+  <p>At every one of those sizes, the same thing is true.  The legal work is the part you
+  trained for, but it is not the part eating the week.</p>
+</section></div>
+
+<hr>
+<div class="wrap"><section>
+  <h2>The kinds of things you will get</h2>
+  <p>One week might be a new model worth knowing about.  Another might be something we
+  built.  Another could be a tool we tried and stopped paying for.</p>
+  <ul>
+    <li><strong>What happened in AI this week, and whether it matters to an estate planning
+    practice.</strong>  A new model lands every few weeks but most of the profession never
+    hears about it.  We will tell you the two or three that change something, and skip the
+    rest</li>
+    <li><strong>What we built, and what it does.</strong>  The idea and the result.  We
+    cannot tell you exactly how to build it in your office, because that depends on the
+    systems you already run, but you will see enough of the shape to know whether it fits</li>
+    <li><strong>Something small enough to try this week.</strong>  One change, one person, one
+    afternoon.  What to hand them, what to expect the first time they run it, and what it
+    looked like when we did it here</li>
+    <li><strong>Something your staff can run without you.</strong>  Most of what gets written
+    assumes the attorney is the one at the keyboard.  We are more interested in what your
+    intake person, your paralegal, or your funding person can do on their own, because that
+    is the work that comes off your desk permanently</li>
+    <li><strong>A tool worth the time, or one that is not.</strong>  There is a great deal of
+    software being sold to law firms right now.  Some of it is very good.  We will tell you
+    which we are paying for, which we tried and stopped using, and why</li>
+  </ul>
+</section></div>
+
+<hr>
+<div class="wrap"><section>
+  <h2>Why we are writing it</h2>
+  <p>We went looking for this newsletter before we decided to write it.</p>
+
+  <p>We had started putting AI into our own firm and we wanted to know what everybody else
+  was doing.  Most of what we found was either breathless or surface level.  You read it, you
+  agree with all of it, and you put it down with nothing you can use on a file.  And a fair amount of it was out of date.  If the last thing you heard
+  was that you need to get better at writing prompts, that advice expired two years ago.</p>
+
+  <p>What we could not find anywhere was the candid version.  The one that tells you what a
+  firm tried, what it did to the work, what broke along the way, and what they would do
+  differently.</p>
+
+  <p>So we are writing that one.  We use AI to help gather and organize it, which is itself
+  part of the answer.  But what goes in it, and the judgment about what matters to an estate
+  planning practice, comes from running one.</p>
+
+  <p class="pull">No theory.  No frameworks.  One working estate planning firm, telling you
+  what it is doing about this, a week at a time.</p>
+</section></div>
+
+<div class="end"><div class="wrap">
+  <p class="free" style="margin-top:0">Free &middot; Weekly &middot; No pitch</p>
+  <form action="#" method="post">
+    <input type="email" name="email" placeholder="you@yourfirm.com" required
+           autocomplete="email" aria-label="Your email address">
+    <button type="submit">Send me the newsletter</button>
+  </form>
+  <p class="fine" style="margin-bottom:0">One email a week.  Unsubscribe in one click.</p>
+</div></div>
+
+<hr>
+<div class="wrap"><footer>
+  Written by <b>Craig R. Hersch</b> and <b>Michael B. Hill</b>, partners at Sheppard Law Firm
+  in Fort Myers, Florida, with <b>Liam Ladia</b>.  We also created <b>The Freedom
+  Practice</b>, our coaching program for estate planning attorneys.  We coach, and we are
+  still in the chair seeing clients every week.
+  <div class="disc">Not legal advice.  Not technology advice.  What we are doing, and
+  what we would do differently.</div>
+</footer></div>
