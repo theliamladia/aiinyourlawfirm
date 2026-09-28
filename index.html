@@ -35,8 +35,26 @@
 
   /* Cognito seamless embed, restyled to the house form. */
   .signup{margin:0 0 .7rem;scroll-margin-top:2rem}
-  .signup .cog-cognito,.signup .cog-form{font-family:inherit!important;color:var(--ink)!important;
+  /* Cognito draws from these theme variables; override them first. */
+  .signup .cog-cognito{
+    --form__background-color:transparent!important; --form__margins:0!important;
+    --form__width:100%!important; --gutter:.6rem!important;
+    --font-family:inherit!important; --font-size:1rem!important; --color:var(--ink)!important;
+    --heading__font-family:inherit!important; --heading__color:var(--navy)!important;
+    --primary:var(--teal)!important; --primary-reverse:#fff!important;
+    --highlight:var(--teal)!important; --focus:var(--teal)!important;
+    --border-width:1.5px!important; --input__border-width:1.5px!important;
+    --input__border-color:var(--line)!important; --input__border-radius:4px!important;
+    --input__background-color:var(--paper)!important; --input__color:var(--ink)!important;
+    --input__padding-v:.95rem!important; --input__padding-h:1.05rem!important;
+    --input__font-size:1rem!important; --input__box-shadow:none!important;
+    --input-focus__box-shadow:0 0 0 3px rgba(23,149,166,.18)!important;
+    --placeholder__color:var(--muted)!important; --label__font-size:.78rem!important}
+  .signup .cog-cognito,.signup .cog-form,.signup .cog-form__container{color:var(--ink)!important;
     background:transparent!important;font-size:1rem!important}
+  .signup .cog-cognito *{font-family:inherit!important}
+  .signup .cog-page__navigation{margin-top:.6rem!important;padding-top:0!important;
+    min-height:0!important}
   .signup .cog-form__container,.signup .cog-page,.signup .cog-body{padding:0!important;
     margin:0!important;max-width:none!important}
   .signup .cog-header{display:none!important}
@@ -51,7 +69,7 @@
     border-color:var(--teal)!important;box-shadow:0 0 0 3px rgba(23,149,166,.18)!important}
   .signup button,.signup .cog-button,.cta{display:inline-block;height:auto!important;
     padding:.95rem 1.7rem!important;font-size:.92rem!important;font-weight:700!important;
-    letter-spacing:.04em;text-transform:uppercase;font-family:inherit!important;
+    letter-spacing:.04em!important;text-transform:uppercase!important;font-family:inherit!important;
     color:#fff!important;background:var(--teal)!important;border:0!important;
     border-radius:4px!important;cursor:pointer;text-decoration:none;
     transition:background .15s;box-shadow:none!important}
