@@ -33,17 +33,30 @@
   .free{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;
     color:var(--teal);margin:2rem 0 .9rem}
 
-  form{display:flex;gap:.6rem;flex-wrap:wrap;margin:0 0 .7rem}
-  input[type=email]{flex:1 1 15rem;min-width:0;padding:.95rem 1.05rem;font-size:1rem;
-    font-family:inherit;color:var(--ink);background:var(--paper);
-    border:1.5px solid var(--line);border-radius:4px}
-  input[type=email]::placeholder{color:var(--muted)}
-  input[type=email]:focus{outline:none;border-color:var(--teal);
-    box-shadow:0 0 0 3px rgba(23,149,166,.18)}
-  button{padding:.95rem 1.7rem;font-size:.92rem;font-weight:700;letter-spacing:.04em;
-    text-transform:uppercase;font-family:inherit;color:#fff;background:var(--teal);
-    border:0;border-radius:4px;cursor:pointer;transition:background .15s}
-  button:hover{background:var(--teal-hi)}
+  /* Cognito seamless embed, restyled to the house form. */
+  .signup{margin:0 0 .7rem;scroll-margin-top:2rem}
+  .signup .cog-cognito,.signup .cog-form{font-family:inherit!important;color:var(--ink)!important;
+    background:transparent!important;font-size:1rem!important}
+  .signup .cog-form__container,.signup .cog-page,.signup .cog-body{padding:0!important;
+    margin:0!important;max-width:none!important}
+  .signup .cog-header{display:none!important}
+  .signup .cog-label{font-size:.78rem!important;font-weight:400!important;
+    color:var(--muted)!important}
+  .signup input:not([type=checkbox]):not([type=radio]),.signup .el-input__inner{width:100%;min-width:0;height:auto!important;
+    padding:.95rem 1.05rem!important;font-size:1rem!important;font-family:inherit!important;
+    color:var(--ink)!important;background:var(--paper)!important;
+    border:1.5px solid var(--line)!important;border-radius:4px!important;box-shadow:none!important}
+  .signup input::placeholder{color:var(--muted)!important}
+  .signup input:focus,.signup .el-input__inner:focus{outline:none!important;
+    border-color:var(--teal)!important;box-shadow:0 0 0 3px rgba(23,149,166,.18)!important}
+  .signup button,.signup .cog-button,.cta{display:inline-block;height:auto!important;
+    padding:.95rem 1.7rem!important;font-size:.92rem!important;font-weight:700!important;
+    letter-spacing:.04em;text-transform:uppercase;font-family:inherit!important;
+    color:#fff!important;background:var(--teal)!important;border:0!important;
+    border-radius:4px!important;cursor:pointer;text-decoration:none;
+    transition:background .15s;box-shadow:none!important}
+  .signup button:hover,.signup .cog-button:hover,.cta:hover{background:var(--teal-hi)!important}
+  .cta{margin:0 0 .7rem}
   .fine{font-size:.78rem;color:var(--muted);margin:0 0 3.6rem;line-height:1.55}
 
   hr{border:0;border-top:1px solid var(--line);margin:0}
@@ -78,12 +91,9 @@
 
     <p class="free">A free email, once a week</p>
 
-    <!-- LIAM: point action= at the list platform. Keep name="email". -->
-    <form action="#" method="post">
-      <input type="email" name="email" placeholder="you@yourfirm.com" required
-             autocomplete="email" aria-label="Your email address">
-      <button type="submit">Send me the newsletter</button>
-    </form>
+    <div id="signup" class="signup">
+      <script src="https://www.cognitoforms.com/f/seamless.js" data-key="kz68srwI1kO0wzVJ4eeyzQ" data-form="27"></script>
+    </div>
     <p class="fine">One email a week.  Unsubscribe in one click.  We will never sell or
     share your address.  Nothing is for sale on this page.
     <a href="privacy.html">Privacy policy</a>.</p>
@@ -220,11 +230,7 @@
 
 <div class="end"><div class="wrap">
   <p class="free" style="margin-top:0">Free &middot; Weekly &middot; No pitch</p>
-  <form action="#" method="post">
-    <input type="email" name="email" placeholder="you@yourfirm.com" required
-           autocomplete="email" aria-label="Your email address">
-    <button type="submit">Send me the newsletter</button>
-  </form>
+  <a class="cta" href="#signup">Send me the newsletter</a>
   <p class="fine" style="margin-bottom:0">One email a week.  Unsubscribe in one click.
   <a href="privacy.html">Privacy policy</a>.</p>
 </div></div>
